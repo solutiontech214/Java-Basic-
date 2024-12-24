@@ -1,7 +1,6 @@
-import java.io.*;
-class Throws {
+    class Throws {
 
-    public static int div(int a,int b) throws IOException
+     int div(int a,int b) throws Exception
     {
         return a/b;
     }
@@ -9,7 +8,7 @@ class Throws {
     {
         Throws t=new Throws();
         try{
-            div(10,0);
+        t.div(10,0);
         }
         catch(Exception e)
         {
